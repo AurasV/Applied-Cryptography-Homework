@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+    <h1>Admin Panel</h1>
+
+    <button id="viewUsersBtn">View All Users</button>
+    <button id="backHomeBtn">Back to Home</button>
+    <div id="adminUserLookup">
+        <h3>Lookup User by ID:</h3>
+        <input type="number" id="userIdInput" placeholder="User ID (integer only)" min="1" step="1" />
+        <button id="lookupUserBtn">Lookup</button>
+        <div id="lookupResult"></div>
+    </div>
+
+    <div id="allUsers"></div>
+
+    <script src="/static/js/admin.js"></script>
+
+</body>
+</html>

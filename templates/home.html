@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+    <h1 id="welcomeText">Hello, Guest!</h1>
+
+    <div id="authForms">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <input type="text" name="username" placeholder="Username" required /><br />
+            <input type="email" name="email" placeholder="Email" required /><br />
+            <input type="password" name="password" placeholder="Password" required /><br />
+            <select name="type" required>
+                <option value="user" selected>Normal User</option>
+                <option value="admin">Admin</option>
+            </select><br />
+            <button type="submit">Register</button>
+        </form>
+
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" name="username" placeholder="Username" required /><br />
+            <input type="password" name="password" placeholder="Password" required /><br />
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="loggedInView" style="display:none;">
+        <p><strong>Your Token:</strong></p>
+        <pre id="tokenDisplay"></pre>
+        <button id="logoutBtn">Logout</button>
+        <a id="adminPageLink" href="/admin" style="display:none;"><button>Go to Admin Page</button></a>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
